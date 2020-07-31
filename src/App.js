@@ -14,9 +14,10 @@ function App() {
     if (formVal) {
     e.preventDefault();
     setTasks([...tasks, {task: formVal, done: false}]);
+    setFormVal('');
     document.getElementById('form').reset();
     } else {
-      e.target.value = '';
+      e.preventDefault();
     }
     // Todo: clear form after submit
   };
