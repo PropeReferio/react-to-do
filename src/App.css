@@ -1,3 +1,14 @@
 body {
   text-align: center;
 }
+form input {
+  display: block;
+  text-align: center;
+  margin: 0.4em auto;
+  padding: 0.4em;
+  border-radius: 4px;
+}
+.done {
+  color: grey;
+  text-decoration: line-through;
+}
