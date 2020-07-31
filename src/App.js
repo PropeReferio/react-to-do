@@ -11,8 +11,13 @@ function App() {
   const [ formVal, setFormVal ] = useState('');
 
   const handleSubmit = e => {
+    if (formVal) {
     e.preventDefault();
     setTasks([...tasks, {task: formVal, done: false}]);
+    document.getElementById('form').reset();
+    } else {
+      e.target.value = '';
+    }
     // Todo: clear form after submit
   };
 
@@ -43,7 +48,7 @@ function App() {
           ))
         }
       </ol>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id='form'>
         <input type="text" placeholder='What to do?' onChange={handleChange}></input>
         <input type="submit" value='Add Task' />
       </form>
