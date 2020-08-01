@@ -1,5 +1,7 @@
 ![](demo.gif)
 
+A little to-do list I put together with ReactJS.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
