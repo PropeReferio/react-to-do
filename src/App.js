@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import v4 from 'uuid';
 
 function App() {
   const [ tasks, setTasks ] = useState([{task: 'Learn Kubernetes',
